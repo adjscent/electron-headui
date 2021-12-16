@@ -1,69 +1,70 @@
 {
-  "name": "headui",
-  "version": "1.0.0",
-  "description": "Head UI in electron",
-  "main": "app/main.js",
-  "dependencies": {
-    "electron-squirrel-startup": "^1.0.0",
-    "electron-tabs": "^0.15.0",
-    "electron-window-state": "^5.0.3",
-    "is-reachable": "^5.0.0"
-  },
-  "devDependencies": {
-    "@electron-forge/cli": "^6.0.0-beta.57",
-    "@electron-forge/maker-deb": "^6.0.0-beta.57",
-    "@electron-forge/maker-rpm": "^6.0.0-beta.57",
-    "@electron-forge/maker-squirrel": "^6.0.0-beta.57",
-    "@electron-forge/maker-zip": "^6.0.0-beta.57",
-    "electron": "^13.1.4"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron-forge start",
-    "package": "electron-forge package",
-    "make": "electron-forge make"
-  },
-  "author": {
-    "name": "test",
-    "email": "test@test.com",
-    "url": "http://test"
-  },
-  "license": "",
-  "homepage": "./",
-  "private": true,
-  "config": {
-    "forge": {
-      "packagerConfig": {
-        "name": "headui",
-        "icon": "resources/icon.icns"
-      },
-      "makers": [
-        {
-          "name": "@electron-forge/maker-squirrel",
-          "config": {
-            "name": "headui"
-          }
-        },
-        {
-          "name": "@electron-forge/maker-zip",
-          "platforms": [
-            "darwin"
-          ]
-        },
-        {
-          "name": "@electron-forge/maker-deb",
-          "config": {
-            "options": {
-              "icon": "resources/icon.png",
-              "maintainer": "test",
-              "homepage": "https://example.com",
-              "scripts": {
-                "postinst": "scripts/postinst.sh"
-              }
-            }
-          }
+    "name": "electron-headui",
+    "version": "1.0.0",
+    "description": "Head UI in electron",
+    "main": "app/main.js",
+    "dependencies": {
+        "electron-squirrel-startup": "^1.0.0",
+        "electron-tabs": "^0.15.0",
+        "electron-window-state": "^5.0.3",
+        "is-reachable": "^5.0.0"
+    },
+    "devDependencies": {
+        "@electron-forge/cli": "^6.0.0-beta.61",
+        "@electron-forge/maker-deb": "^6.0.0-beta.57",
+        "@electron-forge/maker-rpm": "^6.0.0-beta.57",
+        "@electron-forge/maker-squirrel": "^6.0.0-beta.57",
+        "@electron-forge/maker-zip": "^6.0.0-beta.57",
+        "electron": "^13.1.4"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "electron-forge start",
+        "package": "electron-forge package",
+        "make": "electron-forge make"
+    },
+    "author": {
+        "name": "adjscent",
+        "email": "me@imsj.dev",
+        "url": "https://imsj.dev"
+    },
+    "license": "",
+    "homepage": "./",
+    "private": true,
+    "config": {
+        "forge": {
+            "packagerConfig": {
+                "name": "electron-headui",
+                "icon": "resources/icon.icns"
+            },
+            "makers": [
+                {
+                    "name": "@electron-forge/maker-squirrel",
+                    "config": {
+                        "name": "electron-headui"
+                    }
+                },
+                {
+                    "name": "@electron-forge/maker-zip",
+                    "platforms": [
+                        "darwin"
+                    ]
+                },
+                {
+                    "name": "@electron-forge/maker-deb",
+                    "config": {
+                        "options": {
+                            "icon": "resources/icon.png",
+                            "maintainer": "test",
+                            "homepage": "https://example.com",
+                            "scripts": {
+                                "postinst": "scripts/postinst.sh"
+                            }
+                        }
+                    }
+                }
+            ]
         }
-      ]
-    }
-  }
+    },
+    "packageManager": "yarn@3.1.1"
 }

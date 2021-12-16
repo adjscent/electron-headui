@@ -20,7 +20,7 @@ npm run make
 
 A deb will be produced in out/headui-linux-x64
 
-### Run
+### Debug
 
 ```bash
 npm run start

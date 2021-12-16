@@ -1,6 +1,8 @@
 # electron-headui
 
-This is an electron application that automatically opens up multiple browser tabs in its own window. Currently built under ubuntu 20.04 x64.
+This is an electron application that automatically opens up multiple browser tabs in its own window. The tabs can be predefined in electron-headui.json Currently built under ubuntu 20.04 x64.
+
+This is useful to show web-based monitoring status/metrics in a clean and neat fashion.
 
 ## Quick Start
 
@@ -28,7 +30,7 @@ yarn start
 
 ### Config
 
-The binary will read a json file from /etc/electron-headui/headui.json.
+The binary will read a json file from /etc/electron-headui/electron-headui.json.
 
 Example:
 Each json object will be treated as a new tab.

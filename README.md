@@ -1,6 +1,6 @@
 # headui
 
-This is an electron application that automatically opens up multiple browser tabs in its own window.
+This is an electron application that automatically opens up multiple browser tabs in its own window. Currently built under ubuntu 20.04 x64.
 
 ## Quick Start
 
